@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Sunny Kindergarten</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<script>
+		n=prompt("Hello! Welcome to Sunny Kindergarten! Please enter your name:");
+		function showGreeting(event) {
+	event.preventDefault();
+
+	var nameInput = document.getElementById("name-input");
+	var name = nameInput.value.trim();
+	if (name === "") {
+		return false;
+	}
+
+	var result = document.getElementById("greeting-result");
+	result.innerHTML =
+		'<div class="greeting-box">' +
+		"<p>Hello, " + name + "! Welcome to the Sunny Kindergarten Family.</p>" +
+		"<p>We're glad you're here — this is our wonderful community!</p>" +
+		"</div>";
+
+	nameInput.value = "";
+	return false;
+		}
+	</script>
+</head>
+<body>
+	<div id="header">
+		<div>
+			<div id="logo">
+				<a href="index.html"><span>SUNNY KINDERGARTEN</span></a>
+			</div>
+			<ul id="navigation">
+				<li class="selected">
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="answer.html">Q&amp;A</a>
+				</li>
+				<li>
+					<a href="blog.html">Blog</a>
+				</li>
+			
+			</ul>
+		</div>
+	</div>
+	<div id="contents">
+		<div id="adbox">
+			<img src="kindergarten_kartun-removebg-preview.png" alt="Img">
+			<h1>Welcome to Sunny Kindergarten!</h1>
+			<p>
+			A warm, joyful place where little minds grow, explore, and shine every day. We believe every child is unique, curious, and full of potential.
+			</p>
+		</div>
+		<div id="featured" class="body">
+			<div id="main">
+				<h1>This is us</h1>
+				<div class="hero-greeting">
+						<p class="hint">Tell us your name and we'll say hello:</p>
+						<form id="greeting-form" onsubmit="return showGreeting(event)">
+							<input type="text" id="name-input" placeholder="Your name...">
+							<button type="submit">Welcome Me</button>
+						</form>
+						<div id="greeting-result"></div>
+					</div>
+				<ul>
+					<li>
+						<img src="kindergarten building .jpg" alt="Img" width="350" height="400"> <span class="time">Jan<br> 20</span>
+						<p>
+							<em><a href="index.html">Welcome to Sunny Kindergarten</a></em>We are dedicated to providing a safe, nurturing, and inspiring environment for children. 
+							Our programs focus on early development, creativity, and social skills.
+						</p>
+					</li>
+					<li>
+						<span class="time">Feb<br> 29</span>
+						<p>
+							<em><a href="index.html">A Day of Smiles at Sunny Kindergarten</a></em>Our children enjoyed a fun outdoor learning session today! 
+							From storytelling under the trees to group games, every moment was filled with laughter and discovery.
+						</p>
+					</li>
+					<li>
+						<span class="time">Apr<br> 16</span>
+						<p>
+							<em><a href="index.html">Creative Art Week</a></em> This week, our kids explored colors, shapes, and imagination through painting and crafts. We love seeing their creativity shine!
+						</p>
+					</li>
+				</ul>
+			</div>
+			<div id="sidebar">
+				<h1>Q&amp;A</h1>
+				<ul>
+					<li>
+						<p>
+							<em><a href="answer.html">What Age Groups Do You Accept?</a></em> We welcome children from ages 3 to 6 years old.
+						</p>
+					</li>
+					<li>
+						<p>
+							<em><a href="answer.html">What Is Your Teaching Approach?</a></em> We focus on play-based combined learning with structured activities to support emotional, social, and cognitive development.
+						</p>
+					</li>
+					<li>
+						<p>
+							<em><a href="answer.html">Do You Provide Meals?</a></em>Yes, we provide healthy snacks and lunch options to ensure children stay energized throughout the day.
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div>
+			<div>
+				<h2>Introduction to Informatics & Computing</h2>
+				<p>
+					Name: Philomena Dayanara<br>
+					Student ID: 25319050<br>
+					Original Template: <a href="https://freewebsitetemplates.com/preview/socialadvicewebsitetemplate/index.html" target="_blank">Social Advice Website Template</a>
+				</p>
+			</div>
+			<p>
+				© Copyright 2026. All rights reserved.
+			</p>
+		</div>
+	</div>
+</body>
+</html>
